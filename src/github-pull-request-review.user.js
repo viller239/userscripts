@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reminder to submit pull request review on github
 // @namespace    https://github.com
-// @version      0.1
+// @version      0.1.1
 // @description
 // @author       https://github.com/viller239
 // @match        https://*.github.com/*/pull/*
