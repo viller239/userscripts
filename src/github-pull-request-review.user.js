@@ -9,8 +9,8 @@
 // ==/UserScript==
 
 GM_addStyle(`
-[data-pending-message="Finish your review"]:after
-.is-pending.is-writer {
+[data-pending-message="Finish your review"]:after,
+.is-pending.is-writer:after {
     content: 'SUBMIT REVIEW';
     position: fixed;
     left: 0;
