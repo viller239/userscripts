@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Reminder to submit pull request review on github
 // @namespace    https://github.com
-// @version      0.1.1
+// @version      0.1.2
 // @description
 // @author       https://github.com/viller239
 // @match        https://*.github.com/*/pull/*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 
 GM_addStyle(`
-[data-pending-message="Finish your review"]:after,
+.is-review-pending:after,
 .is-pending.is-writer:after {
     content: 'SUBMIT REVIEW';
     position: fixed;
