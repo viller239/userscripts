@@ -6,10 +6,8 @@
 // @description  Deleteing custom theme color from websites
 // @author       https://github.com/viller239
 // @match        *://*/*
-// @run-at       document-start
+// @run-at       document-end
 // ==/UserScript==
 
-const el = document.createElement('meta');
-el.setAttribute('name', 'theme-color');
-el.setAttribute('content', 'rgba(0,0,0,0)');
-if (document.head) document.head.appendChild(el);
+const el = document.querySelector('meta[name="theme-color"]');
+if (el) el.setAttribute('content', '');
