@@ -1,4 +1,3 @@
-  
 // ==UserScript==
 // @name         Fuck theme color
 // @namespace    https://github.com/viller239
