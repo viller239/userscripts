@@ -1,11 +1,13 @@
 // ==UserScript==
 // @name         Mute twitch ads
 // @namespace    https://github.com/viller239
-// @version      0.8
+// @version      0.9
 // @description  Muting video when ads are playing
 // @author       https://github.com/viller239
 // @match        *://*.twitch.tv/*
 // @run-at       document-end
+// @updateURL    https://github.com/viller239/userscripts/raw/master/src/mute-twitch-ads.user.js
+// @downloadURL  https://github.com/viller239/userscripts/raw/master/src/mute-twitch-ads.user.js
 // ==/UserScript==
 
 (function check() {
