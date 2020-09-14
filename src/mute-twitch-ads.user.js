@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mute twitch ads
 // @namespace    https://github.com/viller239
-// @version      0.7
+// @version      0.8
 // @description  Muting video when ads are playing
 // @author       https://github.com/viller239
 // @match        *://*.twitch.tv/*
@@ -20,7 +20,7 @@
                 // mute when ads
                 if (hasAds) {
                     console.log('muting ads')
-                    if (!hasAds) {
+                    if (!hadAds) {
                         vpEl.__volume = videoEl.volume;
                     }
                     videoEl.volume = 0;
