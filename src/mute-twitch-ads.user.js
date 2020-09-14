@@ -19,6 +19,7 @@
                 const hasAds = /(?:\W|^)ad(?:\W|$)/gi.test(vpEl.innerText);
                 const hadAds = vpEl.__hasAds;
                 vpEl.__hasAds = hasAds;
+                
                 // mute when ads
                 if (hasAds) {
                     console.log('muting ads')
@@ -27,6 +28,7 @@
                     }
                     videoEl.volume = 0;
                 }
+                
                 // restore sound when no ads
                 if (!hasAds && hadAds && (vpEl.__volume !== undefined)) {
                     console.log('un-muting video', { hasAds, hadAds, vol: vpEl.__volume, t: vpEl.innerText })
