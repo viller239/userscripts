@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Loops mobile youtube playback
 // @namespace    https://github.com/viller239
-// @version      0.1.1
+// @version      0.2.0
 // @description  Presses "repeat" button as soon as it becomes visible
 // @updateURL    https://viller239.github.io/userscripts/src/mobile-youtube-autorepeat.user.js
 // @downloadURL  https://viller239.github.io/userscripts/src/mobile-youtube-autorepeat.user.js
