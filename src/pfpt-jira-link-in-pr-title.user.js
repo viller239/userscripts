@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Replaces Jira ticket name in PR title with jira link
 // @namespace    https://github.com
-// @version      0.1.7
+// @version      0.1.8
 // @description
 // @author       https://github.com/viller239
 // @match        https://*.github.com/weblifeio/*/pull*
