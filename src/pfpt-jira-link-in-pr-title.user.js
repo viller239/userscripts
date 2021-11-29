@@ -9,7 +9,7 @@
 // ==/UserScript==
 (function addLink() {
     Array.from(document.querySelectorAll('.js-issue-title'))
-        .filter((el) => !el.querySelector('a[heref~="jira.proofpoint"]'))
+        .filter((el) => !el.querySelector('a[href~="jira.proofpoint"]'))
         .map((el) => ([el, el.innerText.match(/(\[?ISO[-\s]*(\d+)\]?)/i)]))
         .filter(([, match]) => match && match[2])
         .forEach(([el, match]) => {
