@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Mute twitch ads
 // @namespace    https://github.com/viller239
-// @version      0.9.2
+// @version      0.9.3
 // @description  Muting video when ads are playing
 // @updateURL    https://viller239.github.io/userscripts/src/mute-twitch-ads.user.js
 // @downloadURL  https://viller239.github.io/userscripts/src/mute-twitch-ads.user.js
@@ -16,7 +16,7 @@
             try {
                 const videoEl = vpEl.querySelector('video');
                 if (!videoEl) return;
-                const hasAds = /(?:\W|^)ad(?:\W|$)/gi.test(vpEl.innerText);
+                const hasAds = /(?:\W|^)ad\sbreak(?:\W|$)/gi.test(vpEl.innerText);
                 const hadAds = vpEl.__hasAds;
                 vpEl.__hasAds = hasAds;
 
