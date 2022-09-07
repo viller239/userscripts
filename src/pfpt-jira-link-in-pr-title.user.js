@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Replaces Jira ticket name in PR title with jira link
 // @namespace    https://github.com
-// @version      0.1.10
+// @version      0.1.11
 // @description
 // @author       https://github.com/viller239
 // @match        https://*.github.com/weblifeio/*/pull*
@@ -9,7 +9,7 @@
 // ==/UserScript==
 (function addLink() {
     Array.from(document.querySelectorAll('.js-issue-title'))
-        .filter((el) => !el.querySelector('a[href*="jira.proofpoint"]'))
+        .filter((el) => !el.querySelector('a[href*="proofpoint"]'))
         .map((el) => ([el, el.innerText.match(/(\[?ISO[-\s]*(\d+)\]?)/i)]))
         .filter(([, match]) => match && match[2])
         .forEach(([el, match]) => {
